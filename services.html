@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Topmate Services</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+        }
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+        .service-item {
+            margin-bottom: 10px;
+        }
+        .service-name {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Topmate Services</h1>
+    <ul class="service-list">
+        {% for service in services %}
+        <li class="service-item">
+            <span class="service-name">{{ service }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
